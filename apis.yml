@@ -1,7 +1,15 @@
 aid: inmemori
 name: Inmemori
-description: 'Inmemori is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Inmemori is a French funeral services company ("pompes funebres") that
+  organizes and manages personalized funeral arrangements with an emphasis on transparency,
+  fair pricing, and full handling of legal and administrative procedures. Available
+  24/7 across agencies in Paris, Bordeaux, Nantes, and Lyon, Inmemori supports families
+  through burial and cremation, secular and religious ceremonies (Christian, Jewish,
+  Muslim, Buddhist), coffins, urns and floral arrangements, funeral pre-planning, and
+  online memorial tribute pages. Backed by Partech, the company operates in the consumer
+  end-of-life services sector. This profile was added to the API Evangelist network
+  as a portfolio-company lead; Inmemori publishes a consumer website and blog but no
+  public developer API surface was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/inmemori/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +17,29 @@ x-backed-by:
 - partech
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://cdn.prod.website-files.com/670002b1cda4e7deb177811a/67249d8114f143e98b705ddc_open%20graph%20(18).webp
 tags:
 - Company
 - Consumer
+- Funeral Services
+- End of Life
+- Memorial
+- France
+- Ceremonies
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/inmemori-domain-security.yml
 - type: Website
   url: https://www.inmemori.com/
+- type: Blog
+  url: https://www.inmemori.com/blog
+- type: PrivacyPolicy
+  url: https://www.inmemori.com/Politique%20confidentialite%CC%81%20(1).pdf
+- type: TermsOfService
+  url: https://www.inmemori.com/564078f6916891471982f0dcce6abcf6_CGV%20%26%20CGU.pdf
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
